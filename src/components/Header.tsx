@@ -21,14 +21,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <svg
-              className="h-8 w-8 text-orange-500 mr-3"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M9.5 2c-1.5 0-2.5 1-2.5 2.5 0 1 .5 1.8 1.2 2.3L6 9H4c-.6 0-1 .4-1 1s.4 1 1 1h2l2.2-2.2c.5.7 1.3 1.2 2.3 1.2 1.5 0 2.5-1 2.5-2.5S11 5 9.5 5c-.3 0-.6.1-.9.2L10 3.8c.2-.1.3-.3.3-.5 0-.4-.3-.8-.8-.8zm8.3 8.5c-.4 0-.8.2-1 .5L15 13.5c-.5-.3-1.1-.5-1.8-.5-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5c0-.7-.2-1.3-.5-1.8L18 13.2c.3-.2.5-.6.5-1 0-.4-.3-.7-.7-.7z" />
-              <path d="M20 14c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2s2-.9 2-2v-4c0-1.1-.9-2-2-2z" />
-            </svg>
+            <img
+              src="https://cdn.poehali.dev/files/0b9938fa-8c1f-4669-8509-3b85a7a1c716.jpg"
+              alt="ДемонтажПро логотип"
+              className="h-8 w-8 rounded-full mr-3 object-cover"
+            />
             <div>
               <h1 className="text-xl font-bold text-gray-900 font-montserrat">
                 ДемонтажПро
