@@ -77,7 +77,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 font-montserrat text-white">
+              <h1 className="md:text-5xl mb-6 font-montserrat text-white font-bold text-4xl">
                 Профессиональный демонтаж в Москве
               </h1>
               <p className="mb-8 font-open-sans text-xl font-normal text-slate-900">
@@ -99,7 +99,7 @@ const Index = () => {
               </div>
             </div>
             <div className="text-center">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="backdrop-blur-sm p-6 rounded-0 bg-transparent">
                 {/* Инструменты */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
                   <img
