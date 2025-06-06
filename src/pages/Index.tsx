@@ -99,19 +99,7 @@ const Index = () => {
               </div>
             </div>
             <div className="text-center">
-              <div className="space-y-4">
-                <p className="text-xl font-semibold text-white font-montserrat">
-                  Опыт работы более 15 лет
-                </p>
-                <p className="text-lg text-red-100 font-open-sans">
-                  Работаем с любыми объектами
-                </p>
-                <p className="text-lg text-red-100 font-open-sans">
-                  Гарантия качества на все работы
-                </p>
-              </div>
-            </div>
-
+              <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
                   <div className="text-4xl font-bold font-montserrat mb-2">
                     24/7
@@ -130,6 +118,19 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+              
+              <div className="space-y-4">
+                <p className="text-xl font-semibold text-white font-montserrat">
+                  Опыт работы более 15 лет
+                </p>
+                <p className="text-lg text-red-100 font-open-sans">
+                  Работаем с любыми объектами
+                </p>
+                <p className="text-lg text-red-100 font-open-sans">
+                  Гарантия качества на все работы
+                </p>
+              </div>
+            </div>
             </div>
           </div>
         </div>
