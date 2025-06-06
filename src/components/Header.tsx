@@ -57,10 +57,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <div className="text-right">
               <p className="font-semibold text-gray-900 font-open-sans text-sm">
-                +7 926-662-13-56
-              </p>
-              <p className="text-xs text-gray-600 font-open-sans">
-                Круглосуточно
+                +7 926-662-13-56 Круглосуточно
               </p>
             </div>
             <div className="hidden md:block">
