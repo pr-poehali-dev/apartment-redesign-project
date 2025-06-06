@@ -94,7 +94,7 @@ const Index = () => {
                   href="tel:+74951234567"
                   className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-red-600 transition-colors font-open-sans text-center"
                 >
-                  +7 (495) 123-45-67
+                  +7 926-662-13-56
                 </a>
               </div>
             </div>

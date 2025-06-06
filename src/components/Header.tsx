@@ -56,8 +56,8 @@ const Header = () => {
           {/* Contact Button */}
           <div className="hidden md:flex items-center space-x-4">
             <div className="text-right">
-              <p className="text-sm font-semibold text-gray-900 font-open-sans">
-                +7 (495) 123-45-67
+              <p className="font-semibold text-gray-900 font-open-sans text-sm">
+                +7 926-662-13-56
               </p>
               <p className="text-xs text-gray-600 font-open-sans">
                 Круглосуточно
