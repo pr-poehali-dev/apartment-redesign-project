@@ -76,7 +76,7 @@ const Index = () => {
       <section className="bg-gradient-to-br from-red-600 to-red-700 text-white pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="md:text-4xl mb-6 font-montserrat text-white font-bold text-3xl mt-7">
+            <h1 className="md:text-4xl mb-6 font-montserrat text-white font-bold text-4xl">
               Профессиональные демонтажные работы
             </h1>
             <p className="mb-8 font-open-sans text-xl text-slate-800">
@@ -107,9 +107,8 @@ const Index = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4 font-montserrat">
               Наши услуги
             </h2>
-            <p className="text-xl text-gray-600 font-open-sans">
-              Полный спектр демонтажных работ для частных и коммерческих
-              объектов
+            <p className="text-gray-600 font-open-sans text-xl">
+              Полный спектр демонтажных работ от "А" до "Я"
             </p>
           </div>
 
