@@ -125,6 +125,7 @@ const Index = () => {
               title={services[1].title}
               description={services[1].description}
               price={services[1].price}
+              features={services[1].features}
               imageUrl="https://cdn.poehali.dev/files/10d04145-194b-4c9f-ae9d-81ca16d14bad.jpeg"
             />
           </div>
