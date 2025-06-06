@@ -121,9 +121,12 @@ const Index = () => {
               features={services[0].features}
               imageUrl="https://cdn.poehali.dev/files/86944869-6614-44a0-8a24-5a5a14e7679b.jpg"
             />
-            {services.slice(1).map((service, index) => (
-              <ServiceCard key={index + 1} {...service} />
-            ))}
+            <ImageServiceCard
+              title={services[1].title}
+              description={services[1].description}
+              price={services[1].price}
+              imageUrl="https://cdn.poehali.dev/files/10d04145-194b-4c9f-ae9d-81ca16d14bad.jpeg"
+            />
           </div>
 
           <div className="text-center mt-12">
