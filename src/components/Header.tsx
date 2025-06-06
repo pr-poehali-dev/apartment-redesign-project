@@ -1,0 +1,119 @@
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import Icon from "@/components/ui/icon";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const navigation = [
+    { name: "Главная", href: "/" },
+    { name: "Услуги", href: "/services" },
+    { name: "О компании", href: "/about" },
+    { name: "Контакты", href: "/contact" },
+  ];
+
+  const isActive = (path: string) => location.pathname === path;
+
+  return (
+    <header className="bg-white shadow-lg fixed w-full top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          {/* Logo */}
+          <div className="flex items-center">
+            <Icon name="Wrench" className="h-8 w-8 text-orange-500 mr-3" />
+            <div>
+              <h1 className="text-xl font-bold text-gray-900 font-montserrat">
+                ДемонтажПро
+              </h1>
+              <p className="text-xs text-gray-600 font-open-sans">
+                Профессиональный демонтаж
+              </p>
+            </div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-8">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors font-open-sans ${
+                  isActive(item.href)
+                    ? "text-orange-500 bg-orange-50"
+                    : "text-gray-700 hover:text-orange-500 hover:bg-gray-50"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Contact Button */}
+          <div className="hidden md:flex items-center space-x-4">
+            <div className="text-right">
+              <p className="text-sm font-semibold text-gray-900 font-open-sans">
+                +7 (495) 123-45-67
+              </p>
+              <p className="text-xs text-gray-600 font-open-sans">
+                Круглосуточно
+              </p>
+            </div>
+            <Link
+              to="/contact"
+              className="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 transition-colors font-open-sans"
+            >
+              Заказать звонок
+            </Link>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-gray-700 hover:text-orange-500 focus:outline-none"
+            >
+              <Icon name={isMenuOpen ? "X" : "Menu"} className="h-6 w-6" />
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors font-open-sans ${
+                    isActive(item.href)
+                      ? "text-orange-500 bg-orange-50"
+                      : "text-gray-700 hover:text-orange-500 hover:bg-gray-50"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <div className="pt-4 border-t border-gray-200">
+                <p className="px-3 text-sm font-semibold text-gray-900 font-open-sans">
+                  +7 (495) 123-45-67
+                </p>
+                <Link
+                  to="/contact"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="mt-2 mx-3 bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 transition-colors font-open-sans inline-block"
+                >
+                  Заказать звонок
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Header;
