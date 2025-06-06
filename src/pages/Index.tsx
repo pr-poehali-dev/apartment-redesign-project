@@ -75,46 +75,26 @@ const Index = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-red-600 to-red-700 text-white pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="md:text-4xl mb-6 font-montserrat text-white font-bold text-3xl">
-                Профессиональные демонтажные работы
-              </h1>
-              <p className="mb-8 font-open-sans text-xl text-slate-800">
-                Быстро, безопасно и с гарантией качества.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/contact"
-                  className="bg-white text-red-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors font-open-sans text-center"
-                >
-                  Получить расчёт
-                </Link>
-                <a
-                  href="tel:+74951234567"
-                  className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-red-600 transition-colors font-open-sans text-center"
-                >
-                  +7 926-662-13-56
-                </a>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-md mx-auto">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Clock" size={32} className="text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  Ценим ваше время
-                </h3>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Shield" size={32} className="text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  Не боимся трудностей
-                </h3>
-              </div>
+          <div className="text-center">
+            <h1 className="md:text-4xl mb-6 font-montserrat text-white font-bold text-3xl">
+              Профессиональные демонтажные работы
+            </h1>
+            <p className="mb-8 font-open-sans text-xl text-slate-800">
+              Быстро, безопасно и с гарантией качества.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/contact"
+                className="bg-white text-red-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors font-open-sans text-center"
+              >
+                Получить расчёт
+              </Link>
+              <a
+                href="tel:+74951234567"
+                className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-red-600 transition-colors font-open-sans text-center"
+              >
+                +7 926-662-13-56
+              </a>
             </div>
           </div>
         </div>
