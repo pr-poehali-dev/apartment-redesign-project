@@ -99,35 +99,49 @@ const Index = () => {
               </div>
             </div>
             <div className="text-center">
-              <div className="p-6 rounded-0">
-                <Icon
-                  name="Wrench"
-                  className="h-16 w-16 mx-auto mb-3 text-white"
-                />
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <div className="text-3xl font-bold font-montserrat">
-                      1000+
-                    </div>
-                    <div className="text-red-100 font-open-sans">Объектов</div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Инструменты */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=300&h=200&fit=crop&crop=center"
+                    alt="Профессиональные инструменты"
+                    className="w-full h-32 object-cover rounded-lg mb-4"
+                  />
+                  <div className="text-2xl font-bold font-montserrat mb-2">
+                    1000+
                   </div>
-                  <div>
-                    <div className="text-3xl font-bold font-montserrat">
-                      10+
-                    </div>
-                    <div className="text-red-100 font-open-sans">Лет опыта</div>
+                  <div className="text-red-100 font-open-sans">
+                    Объектов выполнено
                   </div>
-                  <div>
-                    <div className="text-3xl font-bold font-montserrat">
-                      24/7
-                    </div>
-                    <div className="text-red-100 font-open-sans">Работаем</div>
+                </div>
+
+                {/* КамАЗ */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop&crop=center"
+                    alt="Грузовик КамАЗ"
+                    className="w-full h-32 object-cover rounded-lg mb-4"
+                  />
+                  <div className="text-2xl font-bold font-montserrat mb-2">
+                    24/7
                   </div>
-                  <div>
-                    <div className="text-3xl font-bold font-montserrat">
-                      100%
-                    </div>
-                    <div className="text-red-100 font-open-sans">Гарантия</div>
+                  <div className="text-red-100 font-open-sans">
+                    Работаем круглосуточно
+                  </div>
+                </div>
+
+                {/* Гарантия */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&h=200&fit=crop&crop=center"
+                    alt="Гарантия качества"
+                    className="w-full h-32 object-cover rounded-lg mb-4"
+                  />
+                  <div className="text-2xl font-bold font-montserrat mb-2">
+                    100%
+                  </div>
+                  <div className="text-red-100 font-open-sans">
+                    Гарантия качества
                   </div>
                 </div>
               </div>
