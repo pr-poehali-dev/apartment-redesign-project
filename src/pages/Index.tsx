@@ -80,9 +80,8 @@ const Index = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 font-montserrat text-white">
                 Профессиональный демонтаж в Москве
               </h1>
-              <p className="text-xl mb-8 text-red-100 font-open-sans">
-                Быстро, безопасно и с гарантией качества. Демонтаж квартир,
-                отделки и снос домов под ключ.
+              <p className="mb-8 font-open-sans text-xl font-normal text-slate-900">
+                Быстро, безопасно и с гарантией качества.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -100,7 +99,7 @@ const Index = () => {
               </div>
             </div>
             <div className="text-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+              <div className="bg-white/10 backdrop-blur-sm p-8 rounded-0">
                 <Icon
                   name="Wrench"
                   className="h-24 w-24 mx-auto mb-4 text-white"
