@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
+import ImageServiceCard from "@/components/ImageServiceCard";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 
@@ -113,8 +114,15 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <ServiceCard key={index} {...service} />
+            <ImageServiceCard
+              title={services[0].title}
+              description={services[0].description}
+              price={services[0].price}
+              features={services[0].features}
+              imageUrl="https://cdn.poehali.dev/files/86944869-6614-44a0-8a24-5a5a14e7679b.jpg"
+            />
+            {services.slice(1).map((service, index) => (
+              <ServiceCard key={index + 1} {...service} />
             ))}
           </div>
 
