@@ -99,10 +99,10 @@ const Index = () => {
               </div>
             </div>
             <div className="text-center">
-              <div className="bg-white/10 backdrop-blur-sm p-8 rounded-0">
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-0">
                 <Icon
                   name="Wrench"
-                  className="h-24 w-24 mx-auto mb-4 text-white"
+                  className="h-16 w-16 mx-auto mb-3 text-white"
                 />
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
