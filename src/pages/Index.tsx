@@ -128,6 +128,13 @@ const Index = () => {
               features={services[1].features}
               imageUrl="https://cdn.poehali.dev/files/10d04145-194b-4c9f-ae9d-81ca16d14bad.jpeg"
             />
+            <ImageServiceCard
+              title="Демонтаж зданий"
+              description={services[2].description}
+              price={services[2].price}
+              features={services[2].features}
+              imageUrl="https://cdn.poehali.dev/files/604daa43-b14d-4128-aa89-6f449ebd2833.jpeg"
+            />
           </div>
 
           <div className="text-center mt-12">
