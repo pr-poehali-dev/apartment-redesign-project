@@ -78,10 +78,10 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="md:text-5xl mb-6 font-montserrat text-white font-bold text-4xl">
-                Профессиональная уборка в Москве
+                Профессиональные демонтажные работы
               </h1>
-              <p className="mb-8 font-open-sans text-xl font-normal text-slate-900">
-                Быстро, безопасно и с гарантией качества.
+              <p className="mb-8 font-open-sans text-xl text-white">
+                Быстро, безопасно и с гарантией качества. Полный демонтаж квартир, домов и зданий в Москве и области.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -102,19 +102,18 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
                   <div className="text-4xl font-bold font-montserrat mb-2">
-                    24/7
+                    500+
                   </div>
                   <div className="text-red-100 font-open-sans">
-                    Работаем круглосуточно
+                    Выполненных объектов
                   </div>
                 </div>
-
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
                   <div className="text-4xl font-bold font-montserrat mb-2">
-                    100%
+                    15+
                   </div>
                   <div className="text-red-100 font-open-sans">
-                    Гарантия качества
+                    Лет на рынке
                   </div>
                 </div>
               </div>
