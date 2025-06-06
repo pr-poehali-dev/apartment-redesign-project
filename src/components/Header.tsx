@@ -42,7 +42,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors font-open-sans ${
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors font-open-sans whitespace-nowrap ${
                   isActive(item.href)
                     ? "text-red-600 bg-red-50"
                     : "text-gray-700 hover:text-red-600 hover:bg-gray-50"
