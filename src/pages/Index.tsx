@@ -78,7 +78,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="md:text-5xl mb-6 font-montserrat text-white font-bold text-4xl">
-                Профессиональный демонтаж в Москве
+                Профессиональная уборка в Москве
               </h1>
               <p className="mb-8 font-open-sans text-xl font-normal text-slate-900">
                 Быстро, безопасно и с гарантией качества.
