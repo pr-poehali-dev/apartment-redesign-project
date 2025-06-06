@@ -96,7 +96,7 @@ const Header = () => {
               ))}
               <div className="pt-4 border-t border-gray-200">
                 <p className="px-3 text-sm font-semibold text-gray-900 font-open-sans">
-                  +7 (495) 123-45-67
+                  24/7
                 </p>
                 <Link
                   to="/contact"
