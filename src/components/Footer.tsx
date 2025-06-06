@@ -1,7 +1,23 @@
-import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
+import Icon from "@/components/ui/icon";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const services = [
+    { name: "Демонтаж квартир", href: "/services" },
+    { name: "Снос домов", href: "/services" },
+    { name: "Демонтаж отделки", href: "/services" },
+    { name: "Демонтаж стен", href: "/services" },
+  ];
+
+  const company = [
+    { name: "О компании", href: "/about" },
+    { name: "Наши работы", href: "/portfolio" },
+    { name: "Цены", href: "/pricing" },
+    { name: "Контакты", href: "/contact" },
+  ];
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -9,135 +25,122 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <Icon name="Wrench" className="h-8 w-8 text-red-600 mr-3" />
-              <div>
-                <h2 className="text-xl font-bold font-montserrat">
-                  ДемонтажПро
-                </h2>
-                <p className="text-gray-400 text-sm font-open-sans">
-                  Профессиональный демонтаж
-                </p>
-              </div>
+              <img
+                src="https://cdn.poehali.dev/files/343f4427-f376-4ae2-9d49-053e3d8265c1.jpg"
+                alt="Серп и Молот"
+                className="h-12 w-12 rounded-lg mr-3 object-cover"
+              />
+              <h3 className="text-xl font-bold font-montserrat">
+                "Серп и Молот"
+              </h3>
             </div>
             <p className="text-gray-300 mb-4 font-open-sans">
-              Профессиональные услуги по демонтажу квартир, внутренней отделки и
-              сносу домов. Более 10 лет опыта и тысячи довольных клиентов.
+              Профессиональные демонтажные работы в Москве и области. Более 10
+              лет опыта, современное оборудование, соблюдение всех норм
+              безопасности.
             </p>
             <div className="flex space-x-4">
-              <div className="flex items-center">
-                <Icon name="Phone" className="h-4 w-4 text-red-600 mr-2" />
-                <span className="text-sm font-open-sans">
-                  +7 (495) 123-45-67
-                </span>
-              </div>
-              <div className="flex items-center">
-                <Icon name="Mail" className="h-4 w-4 text-red-600 mr-2" />
-                <span className="text-sm font-open-sans">
-                  info@demontazpro.ru
-                </span>
-              </div>
+              <a
+                href="tel:+79266621356"
+                className="text-gray-300 hover:text-white"
+              >
+                <Icon name="Phone" className="h-6 w-6" />
+              </a>
+              <a
+                href="mailto:info@demolition.ru"
+                className="text-gray-300 hover:text-white"
+              >
+                <Icon name="Mail" className="h-6 w-6" />
+              </a>
+              <a
+                href="https://wa.me/79266621356"
+                className="text-gray-300 hover:text-white"
+              >
+                <Icon name="MessageCircle" className="h-6 w-6" />
+              </a>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 font-montserrat">
+            <h4 className="text-lg font-semibold mb-4 font-montserrat">
               Услуги
-            </h3>
-            <ul className="space-y-2 font-open-sans">
-              <li>
-                <Link
-                  to="/services"
-                  className="text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  Демонтаж квартир
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  Снос внутренних стен
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  Демонтаж отделки
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  Снос домов
-                </Link>
-              </li>
+            </h4>
+            <ul className="space-y-2">
+              {services.map((service) => (
+                <li key={service.name}>
+                  <Link
+                    to={service.href}
+                    className="text-gray-300 hover:text-white transition-colors font-open-sans"
+                  >
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Navigation */}
+          {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 font-montserrat">
-              Навигация
-            </h3>
-            <ul className="space-y-2 font-open-sans">
-              <li>
-                <Link
-                  to="/"
-                  className="text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  Главная
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  Услуги
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  О компании
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-gray-300 hover:text-red-500 transition-colors"
-                >
-                  Контакты
-                </Link>
-              </li>
+            <h4 className="text-lg font-semibold mb-4 font-montserrat">
+              Компания
+            </h4>
+            <ul className="space-y-2">
+              {company.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    to={item.href}
+                    className="text-gray-300 hover:text-white transition-colors font-open-sans"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm font-open-sans">
-            © 2024 ДемонтажПро. Все права защищены.
-          </p>
-          <div className="flex items-center space-x-4 mt-4 md:mt-0">
+        {/* Contact Info */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="flex items-center">
-              <Icon name="Shield" className="h-4 w-4 text-yellow-500 mr-2" />
-              <span className="text-sm text-gray-300 font-open-sans">
-                Лицензия № 12345
-              </span>
+              <Icon name="Phone" className="h-5 w-5 text-red-500 mr-3" />
+              <div>
+                <p className="font-semibold font-open-sans">+7 926-662-13-56</p>
+                <p className="text-sm text-gray-400 font-open-sans">
+                  Круглосуточно
+                </p>
+              </div>
             </div>
             <div className="flex items-center">
-              <Icon name="Clock" className="h-4 w-4 text-red-500 mr-2" />
-              <span className="text-sm text-gray-300 font-open-sans">24/7</span>
+              <Icon name="Mail" className="h-5 w-5 text-red-500 mr-3" />
+              <div>
+                <p className="font-semibold font-open-sans">
+                  info@demolition.ru
+                </p>
+                <p className="text-sm text-gray-400 font-open-sans">
+                  Ответим в течение часа
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center">
+              <Icon name="MapPin" className="h-5 w-5 text-red-500 mr-3" />
+              <div>
+                <p className="font-semibold font-open-sans">Москва и область</p>
+                <p className="text-sm text-gray-400 font-open-sans">
+                  Выезд в любой район
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+
+        {/* Bottom */}
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p className="text-gray-400 font-open-sans">
+            © {currentYear} "Серп и Молот". Все права защищены. Лицензия на
+            строительные работы. Полное страхование ответственности.
+          </p>
         </div>
       </div>
     </footer>

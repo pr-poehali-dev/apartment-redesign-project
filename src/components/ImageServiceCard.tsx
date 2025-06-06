@@ -16,23 +16,22 @@ const ImageServiceCard = ({
   imageUrl,
 }: ImageServiceCardProps) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 overflow-hidden">
-      <div
-        className="relative h-48 bg-cover bg-center"
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
-        <div className="absolute bottom-4 left-4 right-4 text-white">
-          <h3 className="text-xl font-semibold mb-1 font-montserrat">
-            {title}
-          </h3>
-          <p className="text-yellow-400 font-semibold font-open-sans">
-            {price}
-          </p>
+    <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+      <div className="relative h-48 overflow-hidden">
+        <img
+          src={imageUrl}
+          alt={title}
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+        />
+        <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold font-open-sans">
+          {price}
         </div>
       </div>
 
       <div className="p-6">
+        <h3 className="text-xl font-semibold text-gray-900 mb-3 font-montserrat">
+          {title}
+        </h3>
         <p className="text-gray-600 mb-4 font-open-sans">{description}</p>
 
         <ul className="space-y-2 mb-6">
@@ -40,7 +39,7 @@ const ImageServiceCard = ({
             <li key={index} className="flex items-center">
               <Icon
                 name="Check"
-                className="h-4 w-4 text-yellow-600 mr-2 flex-shrink-0"
+                className="h-4 w-4 text-green-600 mr-2 flex-shrink-0"
               />
               <span className="text-sm text-gray-700 font-open-sans">
                 {feature}
@@ -49,8 +48,8 @@ const ImageServiceCard = ({
           ))}
         </ul>
 
-        <button className="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition-colors font-open-sans font-medium">
-          Заказать услугу
+        <button className="w-full bg-red-600 text-white py-3 px-4 rounded-md hover:bg-red-700 transition-colors font-open-sans font-medium">
+          Заказать расчёт
         </button>
       </div>
     </div>

@@ -78,12 +78,14 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="md:text-4xl mb-6 font-montserrat text-white font-bold text-4xl mt-4">
-              Профессиональные демонтажные работы
+              Профессиональные демонтажные работы в Москве
             </h1>
-            <p className="mb-8 font-open-sans text-xl text-red-100">
-              Быстро, безопасно и с гарантией качества.
+            <p className="mb-8 font-open-sans text-xl text-red-100 max-w-4xl mx-auto">
+              Безопасный демонтаж квартир, домов и зданий. Полный цикл работ от
+              получения разрешений до вывоза мусора. Работаем быстро,
+              качественно и с гарантией.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link
                 to="/contact"
                 className="bg-white text-red-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors font-open-sans text-center"
@@ -91,11 +93,31 @@ const Index = () => {
                 Получить расчёт
               </Link>
               <a
-                href="tel:+74951234567"
+                href="tel:+79266621356"
                 className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-red-600 transition-colors font-open-sans text-center"
               >
                 +7 926-662-13-56
               </a>
+            </div>
+            <div className="flex flex-wrap justify-center gap-8 text-center">
+              <div>
+                <div className="text-3xl font-bold text-yellow-400 font-montserrat">
+                  10+
+                </div>
+                <div className="text-red-100 font-open-sans">лет опыта</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-yellow-400 font-montserrat">
+                  1000+
+                </div>
+                <div className="text-red-100 font-open-sans">объектов</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-yellow-400 font-montserrat">
+                  24/7
+                </div>
+                <div className="text-red-100 font-open-sans">работаем</div>
+              </div>
             </div>
           </div>
         </div>
@@ -106,10 +128,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4 font-montserrat">
-              Наши услуги
+              Основные услуги демонтажа
             </h2>
-            <p className="text-gray-600 font-open-sans text-xl">
-              Полный спектр демонтажных работ от "А" до "Я"
+            <p className="text-gray-600 font-open-sans text-xl max-w-3xl mx-auto">
+              Выполняем полный спектр демонтажных работ любой сложности. От
+              частичного демонтажа отделки до полного сноса зданий.
             </p>
           </div>
 
@@ -138,6 +161,10 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-12">
+            <p className="text-gray-600 font-open-sans text-lg mb-6">
+              Нужна консультация специалиста? Выезд и оценка объёма работ —
+              бесплатно!
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/services"
@@ -195,8 +222,9 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-4 font-montserrat">
             Готовы начать демонтаж?
           </h2>
-          <p className="text-xl text-gray-300 mb-8 font-open-sans">
-            Получите бесплатную консультацию и расчёт стоимости за 15 минут
+          <p className="text-xl text-gray-300 mb-8 font-open-sans max-w-3xl mx-auto">
+            Получите бесплатную консультацию и точный расчёт стоимости за 15
+            минут. Выезд специалиста и составление сметы — бесплатно.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -206,7 +234,7 @@ const Index = () => {
               Заказать расчёт
             </Link>
             <a
-              href="tel:+74951234567"
+              href="tel:+79266621356"
               className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-gray-900 transition-colors font-open-sans"
             >
               Позвонить сейчас
