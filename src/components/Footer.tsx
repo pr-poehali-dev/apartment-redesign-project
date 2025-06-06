@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <Icon name="Wrench" className="h-8 w-8 text-orange-500 mr-3" />
+              <Icon name="Wrench" className="h-8 w-8 text-red-600 mr-3" />
               <div>
                 <h2 className="text-xl font-bold font-montserrat">
                   ДемонтажПро
@@ -25,13 +25,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <div className="flex items-center">
-                <Icon name="Phone" className="h-4 w-4 text-orange-500 mr-2" />
+                <Icon name="Phone" className="h-4 w-4 text-red-600 mr-2" />
                 <span className="text-sm font-open-sans">
                   +7 (495) 123-45-67
                 </span>
               </div>
               <div className="flex items-center">
-                <Icon name="Mail" className="h-4 w-4 text-orange-500 mr-2" />
+                <Icon name="Mail" className="h-4 w-4 text-red-600 mr-2" />
                 <span className="text-sm font-open-sans">
                   info@demontazpro.ru
                 </span>
@@ -48,7 +48,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
                 >
                   Демонтаж квартир
                 </Link>
@@ -56,7 +56,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
                 >
                   Снос внутренних стен
                 </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
                 >
                   Демонтаж отделки
                 </Link>
@@ -72,7 +72,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
                 >
                   Снос домов
                 </Link>
@@ -89,7 +89,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
                 >
                   Главная
                 </Link>
@@ -97,7 +97,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
                 >
                   Услуги
                 </Link>
@@ -105,7 +105,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
                 >
                   О компании
                 </Link>
@@ -113,7 +113,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                  className="text-gray-300 hover:text-red-500 transition-colors"
                 >
                   Контакты
                 </Link>
@@ -128,13 +128,13 @@ const Footer = () => {
           </p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <div className="flex items-center">
-              <Icon name="Shield" className="h-4 w-4 text-green-500 mr-2" />
+              <Icon name="Shield" className="h-4 w-4 text-yellow-500 mr-2" />
               <span className="text-sm text-gray-300 font-open-sans">
                 Лицензия № 12345
               </span>
             </div>
             <div className="flex items-center">
-              <Icon name="Clock" className="h-4 w-4 text-blue-500 mr-2" />
+              <Icon name="Clock" className="h-4 w-4 text-red-500 mr-2" />
               <span className="text-sm text-gray-300 font-open-sans">24/7</span>
             </div>
           </div>

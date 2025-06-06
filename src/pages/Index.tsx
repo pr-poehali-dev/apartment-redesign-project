@@ -73,27 +73,27 @@ const Index = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-500 to-orange-600 text-white pt-24 pb-16">
+      <section className="bg-gradient-to-br from-red-600 to-red-700 text-white pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 font-montserrat">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 font-montserrat text-white">
                 Профессиональный демонтаж в Москве
               </h1>
-              <p className="text-xl mb-8 text-orange-100 font-open-sans">
+              <p className="text-xl mb-8 text-red-100 font-open-sans">
                 Быстро, безопасно и с гарантией качества. Демонтаж квартир,
                 отделки и снос домов под ключ.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="bg-white text-orange-500 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors font-open-sans text-center"
+                  className="bg-white text-red-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors font-open-sans text-center"
                 >
                   Получить расчёт
                 </Link>
                 <a
                   href="tel:+74951234567"
-                  className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-orange-500 transition-colors font-open-sans text-center"
+                  className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-red-600 transition-colors font-open-sans text-center"
                 >
                   +7 (495) 123-45-67
                 </a>
@@ -110,33 +110,25 @@ const Index = () => {
                     <div className="text-3xl font-bold font-montserrat">
                       1000+
                     </div>
-                    <div className="text-orange-100 font-open-sans">
-                      Объектов
-                    </div>
+                    <div className="text-red-100 font-open-sans">Объектов</div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold font-montserrat">
                       10+
                     </div>
-                    <div className="text-orange-100 font-open-sans">
-                      Лет опыта
-                    </div>
+                    <div className="text-red-100 font-open-sans">Лет опыта</div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold font-montserrat">
                       24/7
                     </div>
-                    <div className="text-orange-100 font-open-sans">
-                      Работаем
-                    </div>
+                    <div className="text-red-100 font-open-sans">Работаем</div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold font-montserrat">
                       100%
                     </div>
-                    <div className="text-orange-100 font-open-sans">
-                      Гарантия
-                    </div>
+                    <div className="text-red-100 font-open-sans">Гарантия</div>
                   </div>
                 </div>
               </div>
@@ -167,7 +159,7 @@ const Index = () => {
           <div className="text-center mt-12">
             <Link
               to="/services"
-              className="bg-orange-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-orange-600 transition-colors font-open-sans"
+              className="bg-red-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-red-700 transition-colors font-open-sans"
             >
               Все услуги
             </Link>
@@ -190,10 +182,10 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {advantages.map((advantage, index) => (
               <div key={index} className="text-center">
-                <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon
                     name={advantage.icon as any}
-                    className="h-8 w-8 text-orange-500"
+                    className="h-8 w-8 text-red-600"
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 font-montserrat">
@@ -220,7 +212,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-orange-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-orange-600 transition-colors font-open-sans"
+              className="bg-red-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-red-700 transition-colors font-open-sans"
             >
               Заказать расчёт
             </Link>

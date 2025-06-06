@@ -44,8 +44,8 @@ const Header = () => {
                 to={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors font-open-sans ${
                   isActive(item.href)
-                    ? "text-orange-500 bg-orange-50"
-                    : "text-gray-700 hover:text-orange-500 hover:bg-gray-50"
+                    ? "text-red-600 bg-red-50"
+                    : "text-gray-700 hover:text-red-600 hover:bg-gray-50"
                 }`}
               >
                 {item.name}
@@ -65,7 +65,7 @@ const Header = () => {
             </div>
             <Link
               to="/contact"
-              className="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 transition-colors font-open-sans"
+              className="bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700 transition-colors font-open-sans"
             >
               Заказать звонок
             </Link>
@@ -75,7 +75,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-orange-500 focus:outline-none"
+              className="text-gray-700 hover:text-red-600 focus:outline-none"
             >
               <Icon name={isMenuOpen ? "X" : "Menu"} className="h-6 w-6" />
             </button>
@@ -93,8 +93,8 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors font-open-sans ${
                     isActive(item.href)
-                      ? "text-orange-500 bg-orange-50"
-                      : "text-gray-700 hover:text-orange-500 hover:bg-gray-50"
+                      ? "text-red-600 bg-red-50"
+                      : "text-gray-700 hover:text-red-600 hover:bg-gray-50"
                   }`}
                 >
                   {item.name}
@@ -107,7 +107,7 @@ const Header = () => {
                 <Link
                   to="/contact"
                   onClick={() => setIsMenuOpen(false)}
-                  className="mt-2 mx-3 bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 transition-colors font-open-sans inline-block"
+                  className="mt-2 mx-3 bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700 transition-colors font-open-sans inline-block"
                 >
                   Заказать звонок
                 </Link>
