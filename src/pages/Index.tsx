@@ -81,7 +81,8 @@ const Index = () => {
                 Профессиональные демонтажные работы
               </h1>
               <p className="mb-8 font-open-sans text-xl text-white">
-                Быстро, безопасно и с гарантией качества. Полный демонтаж квартир, домов и зданий в Москве и области.
+                Быстро, безопасно и с гарантией качества. Полный демонтаж
+                квартир, домов и зданий в Москве и области.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -117,7 +118,7 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="space-y-4">
                 <p className="text-xl font-semibold text-white font-montserrat">
                   Опыт работы более 15 лет
@@ -129,7 +130,6 @@ const Index = () => {
                   Гарантия качества на все работы
                 </p>
               </div>
-            </div>
             </div>
           </div>
         </div>
