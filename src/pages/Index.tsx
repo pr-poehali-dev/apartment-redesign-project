@@ -80,7 +80,7 @@ const Index = () => {
             <h1 className="md:text-4xl mb-6 font-montserrat text-white font-bold text-4xl mt-4">
               Профессиональные демонтажные работы
             </h1>
-            <p className="mb-8 font-open-sans text-xl text-slate-800">
+            <p className="mb-8 font-open-sans text-xl text-red-100">
               Быстро, безопасно и с гарантией качества.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -138,12 +138,20 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Link
-              to="/services"
-              className="bg-red-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-red-700 transition-colors font-open-sans"
-            >
-              Все услуги
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/services"
+                className="bg-red-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-red-700 transition-colors font-open-sans"
+              >
+                Все услуги
+              </Link>
+              <Link
+                to="/portfolio"
+                className="border-2 border-red-600 text-red-600 px-8 py-3 rounded-md font-semibold hover:bg-red-600 hover:text-white transition-colors font-open-sans"
+              >
+                Наши работы
+              </Link>
+            </div>
           </div>
         </div>
       </section>
