@@ -99,15 +99,9 @@ const Index = () => {
               </div>
             </div>
             <div className="text-center">
-              <div className="backdrop-blur-sm p-6 rounded-0 bg-transparent">
-                {/* Инструменты */}
+              <div className="grid grid-cols-1 gap-6">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
-                  <img
-                    src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=300&h=200&fit=crop&crop=center"
-                    alt="Профессиональные инструменты"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
-                  />
-                  <div className="text-2xl font-bold font-montserrat mb-2">
+                  <div className="text-4xl font-bold font-montserrat mb-2">
                     1000+
                   </div>
                   <div className="text-red-100 font-open-sans">
@@ -115,14 +109,8 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* КамАЗ */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
-                  <img
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=200&fit=crop&crop=center"
-                    alt="Грузовик КамАЗ"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
-                  />
-                  <div className="text-2xl font-bold font-montserrat mb-2">
+                  <div className="text-4xl font-bold font-montserrat mb-2">
                     24/7
                   </div>
                   <div className="text-red-100 font-open-sans">
@@ -130,14 +118,8 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* Гарантия */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/15 transition-all duration-300">
-                  <img
-                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&h=200&fit=crop&crop=center"
-                    alt="Гарантия качества"
-                    className="w-full h-32 object-cover rounded-lg mb-4"
-                  />
-                  <div className="text-2xl font-bold font-montserrat mb-2">
+                  <div className="text-4xl font-bold font-montserrat mb-2">
                     100%
                   </div>
                   <div className="text-red-100 font-open-sans">
