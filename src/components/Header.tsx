@@ -22,9 +22,9 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img
-              src="https://cdn.poehali.dev/files/0b9938fa-8c1f-4669-8509-3b85a7a1c716.jpg"
+              src="https://cdn.poehali.dev/files/343f4427-f376-4ae2-9d49-053e3d8265c1.jpg"
               alt="ДемонтажПро логотип"
-              className="h-8 w-8 rounded-full mr-3 object-cover"
+              className="h-16 w-16 rounded-lg mr-4 object-cover shadow-md"
             />
             <div>
               <h1 className="text-xl font-bold text-gray-900 font-montserrat">
