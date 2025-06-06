@@ -98,12 +98,23 @@ const Index = () => {
                 </a>
               </div>
             </div>
-            <div className="text-center">
-              <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Профессиональный рабочий с инструментами"
-                className="w-full max-w-md mx-auto rounded-lg shadow-2xl"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-md mx-auto">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Clock" size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  Ценим ваше время
+                </h3>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Shield" size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  Не боимся трудностей
+                </h3>
+              </div>
             </div>
           </div>
         </div>
