@@ -28,10 +28,10 @@ const Header = () => {
             />
             <div>
               <h1 className="text-xl font-bold text-gray-900 font-montserrat">
-                ДемонтажПро
+                "Серп и Молот"
               </h1>
-              <p className="text-xs text-gray-600 font-open-sans">
-                Профессиональный демонтаж
+              <p className="font-open-sans text-base text-slate-700 font-medium">
+                Услуги по демонтажу квартир, офисов и зданий.
               </p>
             </div>
           </div>
