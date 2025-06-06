@@ -76,7 +76,7 @@ const Index = () => {
       <section className="bg-gradient-to-br from-red-600 to-red-700 text-white pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="md:text-4xl mb-6 font-montserrat text-white font-bold text-3xl">
+            <h1 className="md:text-4xl mb-6 font-montserrat text-white font-bold text-3xl mt-7">
               Профессиональные демонтажные работы
             </h1>
             <p className="mb-8 font-open-sans text-xl text-slate-800">
